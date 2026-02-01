@@ -1,0 +1,10 @@
+*.class
+*.log
+*.jar
+target/
+.idea/
+*.iml
+.vscode/
+.DS_Store
+homes.json
+config.yml

@@ -1,0 +1,37 @@
+name: SimpleHomes
+version: ${project.version}
+main: com.mattwithabat.simplehomes.SimpleHomes
+api-version: 1.20
+author: mattwithabat
+description: Simple teleportation with per-player homes
+
+commands:
+  home:
+    description: Teleport to home
+    usage: /home [name]
+    aliases: [h]
+  sethome:
+    description: Set a home
+    usage: /sethome [name]
+    aliases: [sh]
+  delhome:
+    description: Delete a home
+    usage: /delhome [name]
+  homes:
+    description: List your homes
+    usage: /homes
+    aliases: [listhomes]
+  homeadmin:
+    description: Admin home commands
+    usage: /homeadmin <reload|delete> [player] [name]
+
+permissions:
+  simplehomes.use:
+    description: Allow using homes
+    default: true
+  simplehomes.limit:
+    description: Maximum homes
+    default: 5
+  simplehomes.admin:
+    description: Admin commands
+    default: op
